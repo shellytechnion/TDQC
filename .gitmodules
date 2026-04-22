@@ -1,0 +1,9 @@
+[submodule "openvla"]
+	path = openvla
+	url = https://github.com/shellytechnion/TDQC-openVLA.git
+[submodule "UniVLA"]
+	path = UniVLA
+	url = https://github.com/shellytechnion/TDQC-uniVLA.git
+[submodule "openpi"]
+	path = openpi
+	url = https://github.com/vla-safe/openpi.git
