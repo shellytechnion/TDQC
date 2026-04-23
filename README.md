@@ -1,6 +1,6 @@
 # TDQC: Temporal-Difference Quality Calibration for VLA Failure Detection
 
-\[[Paper](#)\] \[[Website](https://shellytechnion.github.io/TDQC.github.io/)\]
+\[[Paper](https://arxiv.org/pdf/2604.20472v1)\] \[[Website](https://shellytechnion.github.io/TDQC.github.io/)\]
 
 This repository is the **TDQC** codebase, built on top of [SAFE](https://github.com/vla-safe/SAFE) (Multitask Failure Detection for Vision-Language-Action Models).
 
@@ -85,11 +85,11 @@ This codebase supports **two main applications** of the calibrated failure detec
 
 1. **Early stopping with conformal prediction** — the failure detector is trained offline and used at inference time to trigger early stopping when the predicted failure probability exceeds a conformal threshold. All batch training scripts under `scripts/batch_training/` are for this application.
 
-   <img src="assets/early_stopping_conformal.svg" width="400">
+   <p align="center"><img src="assets/early_stopping_conformal.svg" width="400"></p>
 
 2. **Guided action search** — the failure detector (Q-network) is used online to score and select actions at each timestep, replacing the default diffusion policy action with a higher-Q candidate. The entry point is `openvla/experiments/robot/libero/run_libero_eval_with_qnetwork.py`, with launcher scripts under `scripts/run_action_search/`.
 
-   <img src="assets/q_value_guided_action_selection.svg" width="400">
+   <p align="center"><img src="assets/q_value_guided_action_selection.svg" width="400"></p>
 
 ### Early Stopping: Batch Training Scripts
 
@@ -244,5 +244,13 @@ We used `seed=0` for the videos.
 If you use this repository, please cite both TDQC and SAFE:
 
 ```bibtex
-
+@misc{francismeretzki2026temporaldifferencecalibrationsequential,
+title={Temporal Difference Calibration in Sequential Tasks: Application to Vision-Language-Action Models},
+author={Shelly Francis-Meretzki and Mirco Mutti and Yaniv Romano and Aviv Tamar},
+year={2026},
+eprint={2604.20472},
+archivePrefix={arXiv},
+primaryClass={cs.RO},
+url={https://arxiv.org/abs/2604.20472},
+}
 ```
