@@ -1,4 +1,5 @@
-# TDQC: Temporal-Difference Quality Calibration for VLA Failure Detection
+# TDQC: Temporal-Difference Q-based Calibration for VLA
+## Temporal Difference Calibration in Sequential Tasks: Application to Vision-Language-Action Models
 
 \[[Paper](https://arxiv.org/pdf/2604.20472v1)\] \[[Website](https://shellytechnion.github.io/TDQC.github.io/)\]
 
